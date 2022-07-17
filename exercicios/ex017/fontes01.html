@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas:
+            cm, mn, in, px, pt, pc(paica*)
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+
+            16px geralmente = 1em
+            é indicado usar px e em, preferencialmente em.
+            */
+            font-size: 1em;
+        }
+
+        h1{
+            /*
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: bolder;
+            font-style: italic;
+            */
+
+            /* shorthand font: substitui as linhas acima
+            ordem certa
+            - font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, quas placeat vero sint nostrum voluptate veniam non autem dignissimos in maiores asperiores ducimus reiciendis. Non consequatur obcaecati sed tempore incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, nihil consequatur? Odit, officiis, at possimus tempora voluptas omnis ducimus architecto sed natus consequatur debitis autem adipisci eligendi ipsum similique. Ipsa?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusamus ratione quidem ab deserunt, iure libero eos fugiat! At perspiciatis repellendus odio ipsum voluptates optio quia quibusdam adipisci necessitatibus deserunt?</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quaerat, quae cum est praesentium dolorum pariatur quod laboriosam, molestias ipsa aut odit? Voluptas aliquam rem quia, laboriosam velit quisquam consequatur! lore</p>
+</body>
+</html>

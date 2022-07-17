@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*
+    Em HTML é id em CSS é # (só pode um elemento por documento html)
+    Em HTML é class em CSS é .(pode ter vários elementos por documento html)
+    Um elemento pode receber mais de uma class basta separar por espaço, e tbm pode receber id e class simultaneamente.
+    Se houver uma mesma função no id e no class de um mesmo elemento, o id tem prioriadade, ex.: h1#main e .destaque).
+    
+*/
+
+body{
+    background-color: #ffffff;
+}
+
+h1{
+    color: rgb(6, 70, 143);
+}
+
+h1#main{
+    text-align: center;
+    background-color: rgb(72, 72, 218);
+}
+
+h2{
+    color: rgb(81, 126, 177);
+}
+
+.basico{
+    color: #08b41f;
+}
+
+.intermediario{
+    color: #f7e712;
+}
+
+.avançado{
+    color: #f3221a;
+}
+
+.destaque{
+    background-color: chartreuse;
+    font-style: italic;
+}
