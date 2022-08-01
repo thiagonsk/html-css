@@ -7,7 +7,7 @@
     <title>Tabelas Grandes</title>
     <style>
         body {
-            background-color: aqua;
+            background-color: bisque;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -20,6 +20,7 @@
             margin: auto;
             width: 500px;
             border-collapse: collapse; 
+            position: relative;
         }
 
         caption {
@@ -29,12 +30,22 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(68, 68, 68);
             color: white;
         }
 
-        tr {
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(68, 68, 68);
+        }
 
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
         }
 
         td, th {
@@ -102,6 +113,78 @@
                 <td>sei la</td>
                 <td class="num">50.000.000</td>
             </tr>
+            <tr>
+                <td>REPEAT</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.989.099</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">25.020.200</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>retrjtreoitj</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>blau</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>shurreia</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>caguei</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>sei la</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>REPEAT</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.989.099</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">25.020.200</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>retrjtreoitj</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>blau</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>shurreia</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>caguei</td>
+                <td class="num">50.000.000</td>
+            </tr>
+            <tr>
+                <td>sei la</td>
+                <td class="num">50.000.000</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -110,6 +193,12 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi, repellendus quaerat hic beatae fugit maiores deserunt! Minima, tenetur. Officiis unde repellendus facere commodi aliquid enim, totam corrupti voluptas quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, magnam voluptas quod at dolores dolore eaque minus! Dolores quae ex dolore illum eveniet quaerat? Laudantium ipsam unde quasi iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti eaque vitae debitis quisquam ullam sint accusamus veniam unde ducimus exercitationem similique quis, ex numquam accusantium, fugiat adipisci, non in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ad, blanditiis iure quam necessitatibus aliquam, consequatur architecto corporis labore obcaecati voluptas modi beatae! Eum ipsum dolores, quaerat fuga quod debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi, repellendus quaerat hic beatae fugit maiores deserunt! Minima, tenetur. Officiis unde repellendus facere commodi aliquid enim, totam corrupti voluptas quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, magnam voluptas quod at dolores dolore eaque minus! Dolores quae ex dolore illum eveniet quaerat? Laudantium ipsam unde quasi iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti eaque vitae debitis quisquam ullam sint accusamus veniam unde ducimus exercitationem similique quis, ex numquam accusantium, fugiat adipisci, non in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ad, blanditiis iure quam necessitatibus aliquam, consequatur architecto corporis labore obcaecati voluptas modi beatae! Eum ipsum dolores, quaerat fuga quod debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi, repellendus quaerat hic beatae fugit maiores deserunt! Minima, tenetur. Officiis unde repellendus facere commodi aliquid enim, totam corrupti voluptas quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, magnam voluptas quod at dolores dolore eaque minus! Dolores quae ex dolore illum eveniet quaerat? Laudantium ipsam unde quasi iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti eaque vitae debitis quisquam ullam sint accusamus veniam unde ducimus exercitationem similique quis, ex numquam accusantium, fugiat adipisci, non in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ad, blanditiis iure quam necessitatibus aliquam, consequatur architecto corporis labore obcaecati voluptas modi beatae! Eum ipsum dolores, quaerat fuga quod debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi, repellendus quaerat hic beatae fugit maiores deserunt! Minima, tenetur. Officiis unde repellendus facere commodi aliquid enim, totam corrupti voluptas quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, magnam voluptas quod at dolores dolore eaque minus! Dolores quae ex dolore illum eveniet quaerat? Laudantium ipsam unde quasi iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti eaque vitae debitis quisquam ullam sint accusamus veniam unde ducimus exercitationem similique quis, ex numquam accusantium, fugiat adipisci, non in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ad, blanditiis iure quam necessitatibus aliquam, consequatur architecto corporis labore obcaecati voluptas modi beatae! Eum ipsum dolores, quaerat fuga quod debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi, repellendus quaerat hic beatae fugit maiores deserunt! Minima, tenetur. Officiis unde repellendus facere commodi aliquid enim, totam corrupti voluptas quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, magnam voluptas quod at dolores dolore eaque minus! Dolores quae ex dolore illum eveniet quaerat? Laudantium ipsam unde quasi iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti eaque vitae debitis quisquam ullam sint accusamus veniam unde ducimus exercitationem similique quis, ex numquam accusantium, fugiat adipisci, non in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ad, blanditiis iure quam necessitatibus aliquam, consequatur architecto corporis labore obcaecati voluptas modi beatae! Eum ipsum dolores, quaerat fuga quod debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio excepturi, repellendus quaerat hic beatae fugit maiores deserunt! Minima, tenetur. Officiis unde repellendus facere commodi aliquid enim, totam corrupti voluptas quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repellendus, magnam voluptas quod at dolores dolore eaque minus! Dolores quae ex dolore illum eveniet quaerat? Laudantium ipsam unde quasi iste? Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero deleniti eaque vitae debitis quisquam ullam sint accusamus veniam unde ducimus exercitationem similique quis, ex numquam accusantium, fugiat adipisci, non in! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ad, blanditiis iure quam necessitatibus aliquam, consequatur architecto corporis labore obcaecati voluptas modi beatae! Eum ipsum dolores, quaerat fuga quod debitis.</p>
 
 </body>
 </html>
