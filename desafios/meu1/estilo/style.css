@@ -15,11 +15,21 @@ body{
     margin: 0px;
 }
 
-div#imagem {
-    background-image: url("../imagens/crew-p.png");
+div#baner {
+    background-image: url("../imagens/crew.png");
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     background-repeat: no-repeat;
+    height: 320px;
+}
+
+div#foto img{
+    display: inline;
+    height: 300px;
+}
+
+div#foto p {
+    display: inline;
 }
 
 header{
@@ -56,10 +66,6 @@ main{
     margin: -1px auto 0px auto;
     background-color: white;
     padding: 10px;
-}
-
-main h1{
-
 }
 
 main p{

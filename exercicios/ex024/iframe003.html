@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação no Iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 97vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma Escolha</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ex iure, nesciunt quo iusto doloremque repudiandae esse quisquam ut reiciendis! Ea perspiciatis debitis natus aperiam culpa nulla assumenda voluptates minima?</p>
+    <ul>
+        <li><a href="pagimas_extras/page.html" target="frame">Primeira Escolha</a></li>
+        <li><a href="pagimas_extras/page2.html" target="frame">Segunda Escolha</a></li>
+        <li><a href="pagimas_extras/page3.html" target="frame">Terceira Escolha</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic iure nulla voluptatibus, fugiat suscipit sapiente sint perspiciatis cumque assumenda explicabo ipsum quibusdam voluptatem fugit? Deserunt eius aut repudiandae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores modi dignissimos, eum necessitatibus, doloribus corporis cum magni vero ullam rem facere earum eaque libero, minus unde error repellat iure ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos provident autem pariatur animi repellendus possimus, nostrum necessitatibus expedita voluptatem enim explicabo iusto recusandae illum nam officia officiis? Eligendi, nostrum pariatur?</p>
+    <!--srcdoc permite usar html dentro dele.-->
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia deleniti, dolorum officiis, maiores error inventore maxime magnam iusto blanditiis adipisci earum quam quis ex aut porro eos ducimus obcaecati vitae.</p> <img src='imagens/Link.png'>">
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolores et velit, modi voluptates explicabo distinctio reprehenderit dicta nobis delectus earum minima aliquam iste quae in! Fuga nulla sit quisquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, iste maiores voluptas ratione quos provident molestiae, iure, nulla veritatis omnis soluta autem veniam accusantium expedita nesciunt voluptatem. Dolor, maiores dolores!</p>
+</body>
+</html>
