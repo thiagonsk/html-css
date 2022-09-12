@@ -11,5 +11,61 @@ body {
 
 header {
     background-color: rgb(56, 56, 56);
-    height: 300px;
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+
+header h1 {
+    padding-top: 20px;
+}
+
+main {
+    background-color: blueviolet;
+}
+
+section {
+    height: 110vh;
+}
+
+section#img01 {
+    background-image: url('imagens/dmc5.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url('imagens/ff12.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img03 {
+    background-image: url('imagens/RYUKHAR\ LOGO.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img04 {
+    background-image: url('imagens/super\ shock.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: rgb(164, 175, 175);
+    height: 100px;
+    text-align: center;
+}
+ footer p {
+    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    font-style: italic;
+    text-decoration: underline;
 }
