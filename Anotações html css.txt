@@ -20,4 +20,8 @@ as media queries são especificadas por media types(ex. "screen" "all"...) e med
 EX.:
 <link: rel="stylesheet" href="estilos/styles.css" media="screen and (orientation: portrait)"
 ===========================================================================================================
+Media Query: 17/09/2022 modulo 4 video 35
+"Typical Device Breakpoints"
+pesquisar para saber os pontos de quebra de tela usar as media queries.
+obs.:Isso muda constantemente, por isso mantenha-se atualizado.(ou só de um google, sou um lembrete não um guarda XD)
 ===========================================================================================================
