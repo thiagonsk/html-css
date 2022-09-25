@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
+/* Modificando para mobile first 24/09/2022 */
 
-:root{
+
+:root {
     --cor1: #F299A9;
     --cor2: #6B3273;
     --cor3: #a22a1c;
@@ -9,87 +11,86 @@
     --cor5: #7E9CA3;
 }
 
-body{
-    /*background-image: url("../imagens/crew.png");*/
-    background-color: var(--cor1);
+* {
     margin: 0px;
+    padding: 0px;
 }
 
-div#baner {
+body, html {
+    /*background-image: url("../imagens/crew.png");*/
+    background-color: var(--cor1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header#baner {
+    position: relative;
     background-image: url("../imagens/crew.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 320px;
+    height: 20vh;
+    text-align: center;
+    overflow: hidden;
 }
 
-div#foto img{
-    display: inline;
-    height: 300px;
-}
-
-div#foto p {
-    display: inline;
-}
-
-header{
-    margin: 0px;
-    height: 200px;
-    min-width: 100%;  
-}
-
-header > h1{
+header > h1 {
+    display: none;
     text-align: center;
     font-size: 4.2em;
     text-shadow: white 1px 1px 0px;
     color: rgb(162, 41, 28);
-    margin: 0px;
-    padding-top: 2%;
 }
 
-nav{
-    margin-top: -27px;
-    margin-bottom: 0px;
+header > nav {
+    position: absolute;
+    bottom: 0%;
 }
 
-nav a{
+nav a {
     background-color: var(--cor5);
     color: var(--cor3);
     text-decoration: none;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5em;
+    padding: 5px;
     margin: 0px 10px 0px 10px;
+    
 }
 
-main{
-    max-width: 1000px;
-    margin: -1px auto 0px auto;
-    background-color: white;
+main {
+    width: 88vw;
+    margin: 0px auto 0px auto;
+    background-color: rgba(255, 255, 255, 0.904);
     padding: 10px;
 }
 
-main p{
-    text-align: justify;
-    text-indent: 2em;
+main h1 {
+    margin-bottom: 10px;
 }
 
-footer{
+main h2 {
+    margin-bottom: 10px;
+}
+
+main p {
+    padding: 10px;
+    text-align: justify;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+    word-break: break-all; /*Solução de merda pq não achei a anotação de quebra de palavra*/
+}
+
+footer {
     background-color: #6B3273;
     margin-top: 10px;
-    margin-bottom: 0px;
 }
 
-footer h3{
+footer h3 {
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 0px;
     padding-top: 5px;
 }
 
-footer p{
+footer p {
     text-align: center;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    padding-top: 0px;
 }
 
