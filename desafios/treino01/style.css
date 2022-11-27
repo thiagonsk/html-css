@@ -5,23 +5,60 @@
     padding: 0px;
 }
 
-body {
+body, html {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet
 }
 
-header {
+header {    
     background-color: rgb(56, 56, 56);
     color: white;
-    height: 100px;
+    height: 13vh;
+    
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 0px 5px rgba(255, 255, 255, 0.966);
+    margin-bottom: 1px;
+}
+
+div.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url(Picles\ Rick.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    margin: 23px;
+}
+
+li {
+    font-size: 1.5em;  
+    list-style-type: none;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+li > a {
+    text-decoration: none;
+    color: blueviolet;
+    transition: 1s;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    color: white;
     text-align: center;
-}
-
-header h1 {
-    padding-top: 20px;
-}
-
-main {
-    background-color: blueviolet;
+    text-indent: 24px;
+    width: 800px;
+    font-size: 2.7em;
+    margin: auto;
 }
 
 section {
@@ -42,6 +79,10 @@ section#img02 {
     background-attachment: fixed;
 }
 
+section#img02 > p {
+    color: black;
+}
+
 section#img03 {
     background-image: url('imagens/RYUKHAR\ LOGO.png');
     background-position: center center;
@@ -55,6 +96,10 @@ section#img04 {
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+section#img04 > p {
+    color: black;
 }
 
 footer {

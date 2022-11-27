@@ -1,0 +1,14 @@
+@media  screen and (min-width: 750px) and (max-width: 1024px) {
+    header {
+        height: 50vh;
+        flex-direction: row;
+    }
+
+    menu {
+        display: block;      
+    }
+
+    span#burguer {
+        display: none;
+    }
+}

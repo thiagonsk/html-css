@@ -1,7 +1,7 @@
 @charset "UTF-8";
-
+@media screen and (min-width: 300px) {
+    
 /* Modificando para mobile first 24/09/2022 */
-
 
 :root {
     --cor1: #F299A9;
@@ -18,49 +18,104 @@
 
 body, html {
     /*background-image: url("../imagens/crew.png");*/
-    background-color: var(--cor1);
+    background-color: var(--cor5);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header#baner {
-    position: relative;
+header {
+    order: 1;
+    
     background-image: url("../imagens/crew.png");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 20vh;
+    min-height: 20vh;
+    width: auto;
     text-align: center;
-    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.527);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
 }
 
 header > h1 {
     display: none;
     text-align: center;
-    font-size: 4.2em;
-    text-shadow: white 1px 1px 0px;
-    color: rgb(162, 41, 28);
+    font-size: 1.2em;
+    color: transparent;
 }
 
-header > nav {
-    position: absolute;
-    bottom: 0%;
+header > div#baner {
+    display: block;
+    background-image: url("../imagens/crew.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 15vh;
 }
 
-nav a {
-    background-color: var(--cor5);
-    color: var(--cor3);
+header > menu {
+    display: none;
+}
+
+span#burguer {
+    display: block;
+    background-color: gray;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid rgb(56, 56, 56);
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.534);*/
+}
+
+span#burguer:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li {
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    background-color: gray;
+    border: 1px solid rgb(56, 56, 56);
+}
+
+li:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+a {
+    display: block;
+    background-color: gray;
+    color: rgb(30, 30, 30);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 5px;
-    margin: 0px 10px 0px 10px;
-    
+    margin: 0px 10px 0px 10px;  
+}
+
+a:hover {
+    background-color: rgb(46, 46, 46);
+    color: white;
 }
 
 main {
-    width: 88vw;
-    margin: 0px auto 0px auto;
-    background-color: rgba(255, 255, 255, 0.904);
+    order: 2;
+    min-height: 64vh;
+    min-width: 280px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 234, 248, 0.904);
     padding: 10px;
 }
 
@@ -73,7 +128,7 @@ main h2 {
 }
 
 main p {
-    padding: 10px;
+    padding: auto 10px;
     text-align: justify;
     text-indent: 1.5em;
     line-height: 1.5em;
@@ -81,16 +136,20 @@ main p {
 }
 
 footer {
+    height: 13vh;
     background-color: #6B3273;
-    margin-top: 10px;
+    padding: auto;
+    
 }
 
 footer h3 {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 footer p {
     text-align: center;
+    padding-bottom: 15px;
 }
 
+}
